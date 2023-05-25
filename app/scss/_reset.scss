@@ -1,10 +1,10 @@
-html{
+html {
   box-sizing: border-box;
 }
 
 *,
 *::after,
-*::before{
+*::before {
   box-sizing: inherit;
 }
 
@@ -29,7 +29,8 @@ figcaption,
 blockquote,
 dl,
 dd {
-  margin: 0;
+  margin   : 0;
+  font-size: inherit;
 }
 
 ul[class] {
@@ -38,7 +39,7 @@ ul[class] {
 
 img {
   max-width: 100%;
-  display: block;
+  display  : block;
 }
 
 input,
@@ -48,6 +49,6 @@ select {
   font: inherit;
 }
 
-a{
+a {
   text-decoration: none;
 }
