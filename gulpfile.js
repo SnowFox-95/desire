@@ -125,7 +125,7 @@ function building() {
             "app/js/main.min.js",
             "!app/components/*.*",
             "app/*.html",
-            "app/pages/*.html",
+            "!app/pages/*.html",
             '!app/images/stack/sprite.stack.html',
         ],
         {
