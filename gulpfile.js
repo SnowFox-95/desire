@@ -119,13 +119,14 @@ function building() {
             "app/css/style.min.css",
             "app/images/*.*",
             "!app/images/**/*.html",
-            "!app/images/*.svg",
-            "app/images/sprite.svg",
+            "app/images/*.svg",
+            "!app/images/sprite.svg",
             "app/fonts/*.*",
             "app/js/main.min.js",
-            "app/**/*.html",
             "!app/components/*.*",
-            "!app/pages/*.*"
+            "app/*.html",
+            "app/pages/*.html",
+            '!app/images/stack/sprite.stack.html',
         ],
         {
             base: "app",
@@ -143,5 +144,5 @@ exports.watching = watching;
 exports.building = building;
 exports.cleanDist = cleanDist;
 
-exports.build = series(cleanDist, scripts, building);
-exports.default = parallel(styles, images, scripts, pages, watching);
+exports.build = series(cleanDist, building);
+exports.default = parallel(styles, images, sprite, scripts, pages, watching);
