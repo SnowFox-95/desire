@@ -3,26 +3,32 @@ body {
 	height: 100%;
 }
 
+body {
+	font: {
+		family: 'Open Sans', sans-serif;
+		size  : 16px;
+		weight: 400;
+	}
+
+	line-height: 27px;
+}
+
 .wrapper {
-	display: flex;
+	display       : flex;
 	flex-direction: column;
-	min-height: 100%;
+	min-height    : 100%;
 }
 
 .main {
 	flex: 1 0 auto;
 }
+
 .footer {
 	flex: 0 0 auto;
 }
 
-.container{
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
+.container {
+	max-width: 1140px;
+	margin   : 0 auto;
+	padding  : 0 15px;
 }
-
-
-
-
-
