@@ -125,7 +125,7 @@ function building() {
             "app/js/main.min.js",
             "app/**/*.html",
             "!app/components/*.*",
-
+            "!app/pages/*.*"
         ],
         {
             base: "app",
@@ -143,5 +143,5 @@ exports.watching = watching;
 exports.building = building;
 exports.cleanDist = cleanDist;
 
-exports.build = series(cleanDist, sprite, building);
+exports.build = series(cleanDist, scripts, building);
 exports.default = parallel(styles, images, scripts, pages, watching);
