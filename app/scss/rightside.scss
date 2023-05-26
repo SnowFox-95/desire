@@ -39,6 +39,21 @@
     @extend %title-font;
     font-size: 36px;
     line-height: 51px;
+    position: relative;
+    margin-bottom: 17px;
+    padding-bottom: 17px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 252px;
+      margin: 0 auto;
+      height: 1px;
+      background: #6d7278;
+    }
   }
 
   &__text {
