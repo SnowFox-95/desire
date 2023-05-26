@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
           rel="stylesheet">
 </head>
-
 <body>
 <div class="wrapper">
     <header class="header">
@@ -28,7 +26,7 @@
                         </li>
                     </ul>
                 </nav>
-                <a class="logo" href="">
+                <a class="rightside-menu__logo" href="">
                     <picture>
                         <source srcset="images/logo.avif" type="image/avif">
                         <source srcset="images/logo.webp" type="image/webp">
@@ -45,13 +43,85 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="header__btn">
+                <button class="header__btn ">
                     <img src="images/icon_menu.svg" alt="icon menu">
                 </button>
+                <div class="rightside-menu rightside-menu--close">
+                    <button class="rightside-menu__close">
+                        <img src="images/close.svg" alt="">
+                    </button>
+                    <div class="rightside-menu__content">
+                        <a class="logo" href="#">
+                            <picture>
+                                <source srcset="images/logo-big.avif" type="image/avif">
+                                <source srcset="images/logo-big.webp" type="image/webp">
+                                <img src="images/logo-big.png" alt="logo">
+                            </picture>
+                        </a>
+                        <h4 class="rightside-menu__title">Furniture for life</h4>
+                        <p class="rightside-menu__text">Sustainable hot chicken skateboard, dreamcatcher meggings actually
+                            squid. Slow-carb everyday carry +1 art party microdosing, put a bird on it brooklyn</p>
+                        <picture>
+                            <source srcset="images/content/rightside.avif" type="image/avif">
+                            <source srcset="images/content/rightside.webp" type="image/webp">
+                            <img class="rightside-menu__images" src="images/content/rightside.jpg" alt="images">
+                        </picture>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
-    <main class="main"> </main>
+    <main class="main">
+        <section class="top">
+            <div class="top__inner">
+                <div class="top__slider">
+                    <div class="top__slider-item">
+                        <picture>
+                            <source srcset="images/content/slider-img.avif" type="image/avif">
+                            <source srcset="images/content/slider-img.webp" type="image/webp">
+                            <img class="top__slider-img" src="images/content/slider-img.png" alt="">
+                        </picture>
+                        <div class="top__slider-info">
+                            <h2 class="top__slider-title">
+                                Furniture collection
+                            </h2>
+                            <p class="top__slider-text">Deep v you probably haven't heard of them banh mi synth actually
+                                affogato. Aesthetic lyft ethical drinking vinegar austint</p>
+                        </div>
+                    </div>
+                    <div class="top__slider-item">
+                        <picture>
+                            <source srcset="images/content/slider-img.avif" type="image/avif">
+                            <source srcset="images/content/slider-img.webp" type="image/webp">
+                            <img class="top__slider-img" src="images/content/slider-img.png" alt="">
+                        </picture>
+                        <div class="top__slider-info">
+                            <h2 class="top__slider-title">
+                                Furniture collection
+                            </h2>
+                            <p class="top__slider-text">Deep v you probably haven't heard of them banh mi synth actually
+                                affogato. Aesthetic lyft ethical drinking vinegar austint</p>
+                        </div>
+                    </div>
+                    <div class="top__slider-item">
+                        <picture>
+                            <source srcset="images/content/slider-img.avif" type="image/avif">
+                            <source srcset="images/content/slider-img.webp" type="image/webp">
+                            <img class="top__slider-img" src="images/content/slider-img.png" alt="">
+                        </picture>
+                        <div class="top__slider-info">
+                            <h2 class="top__slider-title">
+                                Furniture collection
+                            </h2>
+                            <p class="top__slider-text">Deep v you probably haven't heard of them banh mi synth actually
+                                affogato. Aesthetic lyft ethical drinking vinegar austint</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </main>
     <footer class="footer">
         <div class="footer__content">
             <div class="container">
@@ -110,7 +180,6 @@
         </div>
     </footer>
 </div>
-    
-    <script src="js/main.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
 </html>
