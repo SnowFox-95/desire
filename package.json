@@ -23,6 +23,7 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
+    "jquery": "^3.5.1",
     "sass": "^1.59.3"
   }
 }

@@ -12,6 +12,8 @@ body {
 
   line-height: 27px;
   color      :$default;
+  overflow-x: hidden;
+  min-width: 320px;
 }
 
 .wrapper {

@@ -7,9 +7,11 @@
   max-width: 694px;
   background-color: #fff;
   padding-top: 40px;
+  box-shadow: -2px 3px 17px 0px #000;
+  transition: all .6s;
 
   &.rightside-menu--close {
-    transform: translateX(100%);
+    transform: translateX(500%);
   }
 
   &__close {

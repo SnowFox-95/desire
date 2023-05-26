@@ -79,11 +79,14 @@ function images() {
 }*/
 
 function scripts() {
-    return src(["app/js/main.js"])
-        .pipe(concat("main.min.js"))
+    return src([
+        'node_modules/jquery/dist/jquery.js',
+        'app/js/main.js'
+    ])
+        .pipe(concat('main.min.js'))
         .pipe(uglify())
-        .pipe(dest("app/js"))
-        .pipe(browserSync.stream());
+        .pipe(dest('app/js'))
+        .pipe(browserSync.stream())
 }
 
 function styles() {
@@ -110,7 +113,7 @@ function watching() {
 }
 
 function cleanDist() {
-    return src("dist").pipe(clean());
+    return src("dist").pipe(clean())
 }
 
 function building() {
