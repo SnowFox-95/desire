@@ -553,7 +553,7 @@ body {
   cursor: pointer;
 }
 .gallery .mixitup-control-active {
-  background-color: #ffef35;
+  background-color: rgba(255, 239, 53, 0.5);
   color: #363838;
   border: 1px solid #ffef35;
 }
