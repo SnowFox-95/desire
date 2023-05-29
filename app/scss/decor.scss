@@ -1,0 +1,35 @@
+.decor {
+    padding: 170px 0 155px;
+
+    background: {
+        image : url(../images/decor-bg.jpg);
+        size  : cover;
+        repeat: no-repeat;
+    }
+
+    min-height: 600px;
+
+    &__title {
+        max-width     : 540px;
+        color         : $title;
+        font-size     : 60px;
+        line-height   : 80px;
+        padding-bottom: 22px;
+        margin-bottom : 22px;
+        position      : relative;
+
+        &::after {
+            content   : '';
+            position  : absolute;
+            left      : 0;
+            height    : 1px;
+            width     : 200px;
+            bottom    : 0;
+            background: #6d7278;
+        }
+    }
+
+    &__text {
+        max-width: 540px;
+    }
+}
