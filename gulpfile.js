@@ -92,6 +92,10 @@ function scripts() {
 
 function styles() {
     return src("app/scss/style.scss")
+        .pipe(autoprefixer({overrideBrowserlist: ['last 10 version']}))
+        .pipe(concat('style.css'))
+        .pipe(scss())
+        .pipe(dest('app/css'))
         .pipe(autoprefixer({overrideBrowserslist: ["last 10 version"]}))
         .pipe(concat("style.min.css"))
         .pipe(scss({outputStyle: "compressed"}))
@@ -120,7 +124,7 @@ function cleanDist() {
 function building() {
     return src(
         [
-            "app/css/style.min.css",
+            "app/css/*.css",
             "app/images/*.*",
             "app/images/content/*.*",
             "!app/images/**/*.html",
