@@ -1,38 +1,39 @@
 .new-collection {
   text-align: center;
-  padding: 45px 0 105px;
+  padding   : 45px 0 105px;
 
   &__title {
-    color: $title;
-    font-size: 35px;
-    line-height: 51px;
+    color         : $title;
+    font-size     : 35px;
+    line-height   : 51px;
     padding-bottom: 25px;
-    margin-bottom: 25px;
-    position: relative;
+    margin-bottom : 25px;
+    position      : relative;
+    @extend %title-font;
 
     &::after {
-      position: absolute;
-      content: '';
-      width: 250px;
-      height: 1px;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
+      position        : absolute;
+      content         : '';
+      width           : 250px;
+      height          : 1px;
+      bottom          : 0;
+      left            : 0;
+      right           : 0;
+      margin          : 0 auto;
       background-color: #6d7278;
     }
   }
 
   &__text {
     max-width: 730px;
-    margin: 0 auto 30px;
+    margin   : 0 auto 30px;
   }
 }
 
 .collection {
-  display: grid;
+  display              : grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 30px;
+  grid-gap             : 30px;
 
   &__item {
     position: relative;
@@ -51,47 +52,49 @@
   }
 
   &__info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    bottom          : 0;
     background-color: rgba(#fff, .7);
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: all .5s;
+    padding         : 10px;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    justify-content : center;
+    opacity         : 0;
+    transition      : all .5s;
   }
 
   &__info-title {
-    font-size: 20px;
-    line-height: 25px;
-    color: $title;
+    @extend %title-font;
+    font-size     : 20px;
+    line-height   : 25px;
+    color         : $title;
     padding-bottom: 19px;
-    margin-bottom: 19px;
-    position: relative;
+    margin-bottom : 19px;
+    position      : relative;
 
     &::after {
-      position: absolute;
-      content: '';
-      bottom: 0;
-      height: 1px;
+      position  : absolute;
+      content   : '';
+      bottom    : 0;
+      height    : 1px;
       background: #6d7278;
-      width: 80%;
-      margin: 0 auto;
-      left: 0;
-      right: 0;
+      width     : 80%;
+      margin    : 0 auto;
+      left      : 0;
+      right     : 0;
     }
   }
 
   &__info-text {
     font: {
       weight: 600;
-      size: 14px;
+      size  : 14px;
     }
+
     color: #707070;
   }
 }

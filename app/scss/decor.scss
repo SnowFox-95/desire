@@ -10,6 +10,7 @@
     min-height: 600px;
 
     &__title {
+        @extend %title-font;
         max-width     : 540px;
         color         : $title;
         font-size     : 60px;
