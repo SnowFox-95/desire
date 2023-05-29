@@ -65,9 +65,11 @@ a {
   box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
+  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
 }
@@ -89,6 +91,10 @@ a {
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
@@ -319,8 +325,7 @@ body {
   margin-left: -14%;
   max-width: 703px;
   height: 815px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .top__slider-info {
   max-width: 645px;
@@ -388,8 +393,7 @@ body {
 }
 .collection__images {
   min-height: 350px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .collection__info {
   position: absolute;
@@ -480,20 +484,6 @@ body {
   border: 1px solid rgba(54, 56, 56, 0.7);
   width: 100%;
 }
-.footer__form-input::-moz-placeholder {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 27px;
-  color: #a1a1a1;
-}
-.footer__form-input:-ms-input-placeholder {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 27px;
-  color: #a1a1a1;
-}
 .footer__form-input::placeholder {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -567,4 +557,4 @@ body {
   color: #a1a1a1;
   text-align: center;
   padding: 42px 0 41px;
-}/*# sourceMappingURL=style.css.map */
+}
