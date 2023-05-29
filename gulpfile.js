@@ -82,6 +82,7 @@ function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/slick-carousel/slick/slick.js',
+        'node_modules/mixitup/dist/mixitup.js',
         'app/js/main.js'
     ])
         .pipe(concat('main.min.js'))
@@ -127,6 +128,7 @@ function building() {
             "app/css/*.css",
             "app/images/*.*",
             "app/images/content/*.*",
+            "app/images/gallery/*.*",
             "!app/images/**/*.html",
             "app/images/*.svg",
             "!app/images/sprite.svg",
