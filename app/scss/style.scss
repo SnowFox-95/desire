@@ -4,13 +4,14 @@
 @import 'libs';
 @import 'global';
 
+/* ui */
 @import 'header';
+@import 'footer';
 
+/* for main page */
 @import 'top';
 @import 'new-collection';
 @import 'decor';
 @import 'howItWorks';
 @import 'gallery';
 @import 'miniBlog';
-
-@import 'footer';   
