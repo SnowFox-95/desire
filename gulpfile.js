@@ -127,6 +127,7 @@ function building() {
         [
             "app/css/*.css",
             "app/images/**/*.*",
+            "!app/images/src/**/*.*",
             "!app/images/**/*.html",
             "app/images/*.svg",
             "!app/images/sprite.svg",
