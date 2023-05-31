@@ -126,9 +126,7 @@ function building() {
     return src(
         [
             "app/css/*.css",
-            "app/images/*.*",
-            "app/images/content/*.*",
-            "app/images/gallery/*.*",
+            "app/images/**/*.*",
             "!app/images/**/*.html",
             "app/images/*.svg",
             "!app/images/sprite.svg",
