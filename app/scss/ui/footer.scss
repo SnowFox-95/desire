@@ -1,12 +1,12 @@
 .footer {
   &__content {
     background-color: #DFDFDF;
-    padding: 60px 0 80px;
+    padding         : 60px 0 80px;
 
   }
 
   &__inner {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
   }
 
@@ -18,34 +18,35 @@
     color: $title;
     @extend %title-font;
     margin-bottom: 14px;
-    line-height: 23px;
+    line-height  : 23px;
   }
 
   &__info-text {
     margin-bottom: 16px;
-    max-width: 475px;
+    max-width    : 475px;
   }
 
   &__info-email {
     font: {
       weight: 600;
-      size: 14px;
+      size  : 14px;
     }
-    color: $title;
+
+    color        : $title;
     margin-bottom: 22px;
-    padding-left: 30px;
-    display: inline-block;
-    position: relative;
+    padding-left : 30px;
+    display      : inline-block;
+    position     : relative;
 
     &::before {
-      content: '';
+      content         : '';
       background-image: url("../images/envelope.svg");
-      position: absolute;
-      top: 8px;
-      left: 0;
-      width: 16px;
-      height: 12px;
-      color: $title;
+      position        : absolute;
+      top             : 8px;
+      left            : 0;
+      width           : 16px;
+      height          : 12px;
+      color           : $title;
     }
   }
 
@@ -54,53 +55,54 @@
   }
 
   &__form-input {
-    padding: 6px 10px 6px 18px;
-    border-radius: 21px;
+    padding         : 6px 10px 6px 18px;
+    border-radius   : 21px;
     background-color: transparent;
-    border: 1px solid rgba($title, .7);
-    width: 100%;
+    border          : 1px solid rgba($title, .7);
+    width           : 100%;
 
 
     &::placeholder {
       font: {
         family: "Open Sans", sans-serif;
         weight: 400;
-        size: 16px;
+        size  : 16px;
       }
+
       line-height: 27px;
-      color: #a1a1a1;
+      color      : #a1a1a1;
     }
   }
 
   &__form-button {
     background-color: $title;
-    border: none;
-    color: #fffff0;
-    border-radius: 21px;
-    font-weight: 600;
-    padding: 6px 12px;
-    min-width: 160px;
-    margin-left: 9px;
-    cursor: pointer;
+    border          : none;
+    color           : #fffff0;
+    border-radius   : 21px;
+    font-weight     : 600;
+    padding         : 6px 12px;
+    min-width       : 160px;
+    margin-left     : 9px;
+    cursor          : pointer;
   }
 
   &__social {
-    width: 125px;
+    width       : 125px;
     margin-right: auto;
-    margin-left: auto;
+    margin-left : auto;
   }
 
   &__social-link {
     padding-left: 28px;
-    position: relative;
+    position    : relative;
 
     &::before {
-      content: '';
+      content : '';
       position: absolute;
-      top: 3px;
-      left: 0;
-      width: 16px;
-      height: 16px;
+      top     : 3px;
+      left    : 0;
+      width   : 16px;
+      height  : 16px;
     }
   }
 
@@ -110,9 +112,9 @@
 
   &__social-link--instagram::before {
     background-image: url("../images/instagram.svg");
-    width: 14px;
-    height: 14px;
-    top: 4px;
+    width           : 14px;
+    height          : 14px;
+    top             : 4px;
   }
 
   &__social-link--pinterest::before {
@@ -121,37 +123,40 @@
 
   &__social-link--whatsapp::before {
     background-image: url("../images/whatsapp.svg");
-    width: 14px;
-    height: 14px;
-    top: 4px;
+    width           : 14px;
+    height          : 14px;
+    top             : 4px;
   }
 
   &__social-link--youtube::before {
     background-image: url("../images/youtube.svg");
   }
 
-  &__social-item, &__menu-item {
+  &__social-item,
+  &__menu-item {
     margin-bottom: 15px;
+
     font: {
       weight: 600;
-      size: 14px;
+      size  : 14px;
     }
   }
 
-  &__social-link, &__menu-link {
+  &__social-link,
+  &__menu-link {
     color: #707070;
   }
 
   &__menu {
     margin-right: 60px;
-    width: 125px;
+    width       : 125px;
   }
 
 
   &__copyright {
     background-color: $title;
-    color: #a1a1a1;
-    text-align: center;
-    padding: 42px 0 41px;
+    color           : #a1a1a1;
+    text-align      : center;
+    padding         : 42px 0 41px;
   }
 }

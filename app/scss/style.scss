@@ -1,17 +1,18 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'libs';
-@import 'global';
+/* root */
+@import 'root/vars';
+@import 'root/fonts';
+@import 'root/reset';
+@import 'root/libs';
+@import 'root/global';
 
 /* ui */
-@import 'header';
-@import 'footer';
+@import 'ui/header';
+@import 'ui/footer';
 
 /* for main page */
-@import 'top';
-@import 'new-collection';
-@import 'decor';
-@import 'howItWorks';
-@import 'gallery';
-@import 'miniBlog';
+@import 'main/top';
+@import 'main/new-collection';
+@import 'main/decor';
+@import 'main/howItWorks';
+@import 'main/gallery';
+@import 'main/miniBlog';

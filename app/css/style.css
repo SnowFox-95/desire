@@ -1,3 +1,4 @@
+/* root */
 .blog-box__item-title, .blog-box__title, .works-path__item-title, .works-path__title, .decor__title, .collection__info-title, .new-collection__title, .top__slider-title, .footer__info-title, .rightside-menu__title, .menu__list-link {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -257,6 +258,7 @@ body {
   padding-top: 40px;
   box-shadow: -2px 3px 17px 0px #000;
   transition: all 0.6s;
+  z-index: 100;
 }
 .rightside-menu.rightside-menu--close {
   transform: translateX(500%);
