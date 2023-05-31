@@ -1,4 +1,4 @@
-.footer__info-title, .works-path__item-title, .works-path__title, .decor__title, .collection__info-title, .new-collection__title, .top__slider-title, .rightside-menu__title, .menu__list-link {
+.blog-box__item-title, .blog-box__title, .works-path__item-title, .works-path__title, .decor__title, .collection__info-title, .new-collection__title, .top__slider-title, .footer__info-title, .rightside-menu__title, .menu__list-link {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -213,6 +213,7 @@ body {
   background-color: #ffef35;
 }
 
+/* ui */
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -303,6 +304,131 @@ body {
   max-width: 485px;
 }
 
+.footer__content {
+  background-color: #DFDFDF;
+  padding: 60px 0 80px;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__info {
+  width: 540px;
+}
+.footer__info-title {
+  color: #363838;
+  margin-bottom: 14px;
+  line-height: 23px;
+}
+.footer__info-text {
+  margin-bottom: 16px;
+  max-width: 475px;
+}
+.footer__info-email {
+  font-weight: 600;
+  font-size: 14px;
+  color: #363838;
+  margin-bottom: 22px;
+  padding-left: 30px;
+  display: inline-block;
+  position: relative;
+}
+.footer__info-email::before {
+  content: "";
+  background-image: url("../images/envelope.svg");
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 16px;
+  height: 12px;
+  color: #363838;
+}
+.footer__form {
+  display: flex;
+}
+.footer__form-input {
+  padding: 6px 10px 6px 18px;
+  border-radius: 21px;
+  background-color: transparent;
+  border: 1px solid rgba(54, 56, 56, 0.7);
+  width: 100%;
+}
+.footer__form-input::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #a1a1a1;
+}
+.footer__form-button {
+  background-color: #363838;
+  border: none;
+  color: #fffff0;
+  border-radius: 21px;
+  font-weight: 600;
+  padding: 6px 12px;
+  min-width: 160px;
+  margin-left: 9px;
+  cursor: pointer;
+}
+.footer__social {
+  width: 125px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer__social-link {
+  padding-left: 28px;
+  position: relative;
+}
+.footer__social-link::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+}
+.footer__social-link--facebook::before {
+  background-image: url("../images/facebook.svg");
+}
+.footer__social-link--instagram::before {
+  background-image: url("../images/instagram.svg");
+  width: 14px;
+  height: 14px;
+  top: 4px;
+}
+.footer__social-link--pinterest::before {
+  background-image: url("../images/pinterest.svg");
+}
+.footer__social-link--whatsapp::before {
+  background-image: url("../images/whatsapp.svg");
+  width: 14px;
+  height: 14px;
+  top: 4px;
+}
+.footer__social-link--youtube::before {
+  background-image: url("../images/youtube.svg");
+}
+.footer__social-item, .footer__menu-item {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.footer__social-link, .footer__menu-link {
+  color: #707070;
+}
+.footer__menu {
+  margin-right: 60px;
+  width: 125px;
+}
+.footer__copyright {
+  background-color: #363838;
+  color: #a1a1a1;
+  text-align: center;
+  padding: 42px 0 41px;
+}
+
+/* for main page */
 .top__inner {
   padding-bottom: 70px;
   position: relative;
@@ -574,126 +700,36 @@ body {
   height: 100%;
 }
 
-.footer__content {
-  background-color: #DFDFDF;
-  padding: 60px 0 80px;
+.blog-box {
+  padding-bottom: 100px;
 }
-.footer__inner {
-  display: flex;
-  justify-content: space-between;
-}
-.footer__info {
-  width: 540px;
-}
-.footer__info-title {
+.blog-box__title {
   color: #363838;
-  margin-bottom: 14px;
-  line-height: 23px;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0 auto 30px;
+  text-align: center;
 }
-.footer__info-text {
-  margin-bottom: 16px;
-  max-width: 475px;
+.blog-box__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
 }
-.footer__info-email {
-  font-weight: 600;
-  font-size: 14px;
-  color: #363838;
-  margin-bottom: 22px;
-  padding-left: 30px;
+.blog-box__img-link {
+  margin-bottom: 19px;
   display: inline-block;
-  position: relative;
 }
-.footer__info-email::before {
-  content: "";
-  background-image: url("../images/envelope.svg");
-  position: absolute;
-  top: 8px;
-  left: 0;
-  width: 16px;
-  height: 12px;
-  color: #363838;
-}
-.footer__form {
-  display: flex;
-}
-.footer__form-input {
-  padding: 6px 10px 6px 18px;
-  border-radius: 21px;
-  background-color: transparent;
-  border: 1px solid rgba(54, 56, 56, 0.7);
-  width: 100%;
-}
-.footer__form-input::placeholder {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 27px;
-  color: #a1a1a1;
-}
-.footer__form-button {
-  background-color: #363838;
-  border: none;
-  color: #fffff0;
-  border-radius: 21px;
-  font-weight: 600;
-  padding: 6px 12px;
-  min-width: 160px;
-  margin-left: 9px;
-  cursor: pointer;
-}
-.footer__social {
-  width: 125px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.footer__social-link {
-  padding-left: 28px;
-  position: relative;
-}
-.footer__social-link::before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 0;
-  width: 16px;
-  height: 16px;
-}
-.footer__social-link--facebook::before {
-  background-image: url("../images/facebook.svg");
-}
-.footer__social-link--instagram::before {
-  background-image: url("../images/instagram.svg");
-  width: 14px;
-  height: 14px;
-  top: 4px;
-}
-.footer__social-link--pinterest::before {
-  background-image: url("../images/pinterest.svg");
-}
-.footer__social-link--whatsapp::before {
-  background-image: url("../images/whatsapp.svg");
-  width: 14px;
-  height: 14px;
-  top: 4px;
-}
-.footer__social-link--youtube::before {
-  background-image: url("../images/youtube.svg");
-}
-.footer__social-item, .footer__menu-item {
-  margin-bottom: 15px;
-  font-weight: 600;
+.blog-box__links {
+  margin-bottom: 9px;
   font-size: 14px;
-}
-.footer__social-link, .footer__menu-link {
+  font-weight: 600;
   color: #707070;
 }
-.footer__menu {
-  margin-right: 60px;
-  width: 125px;
+.blog-box__date, .blog-box__author, .blog-box__theme {
+  color: inherit;
 }
-.footer__copyright {
-  background-color: #363838;
-  color: #a1a1a1;
-  text-align: center;
-  padding: 42px 0 41px;
+.blog-box__item-title {
+  color: #363838;
+  font-size: 24px;
+  line-height: 38px;
 }
