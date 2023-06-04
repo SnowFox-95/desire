@@ -1,4 +1,4 @@
-$title  : #363838;
+$title: #363838;
 $default: #5a5a5a;
 
 %title-font {
@@ -7,4 +7,12 @@ $default: #5a5a5a;
     weight: 700;
   }
 
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
 }

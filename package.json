@@ -9,6 +9,7 @@
   "author": "Snowfox-95",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.29.0",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-avif": "^1.1.1",
