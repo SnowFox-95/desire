@@ -6,7 +6,7 @@
     background-size: cover;
     text-align: center;
     padding: 160px 0;
-    margin-top: -53px;
+    margin: -53px 0 0 0;
   }
 
   &__prev-title {
@@ -25,8 +25,8 @@
     @extend %title-font;
     font-size: 36px;
     line-height: 60px;
-    padding-bottom: 22px;
-    margin-bottom: 22px;
+    padding: 0 0 22px 0;
+    margin: 0 0 22px 0;
     position: relative;
 
     &::after {
@@ -41,10 +41,10 @@
   }
 
   &__text {
-    padding-left: 284px;
+    padding: 0 0 0 284px;
 
     p {
-      margin-bottom: 30px;
+      margin: 0 0 30px 0;
     }
   }
 

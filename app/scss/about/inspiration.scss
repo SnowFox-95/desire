@@ -1,0 +1,79 @@
+.inspiration {
+  padding: 100px 0 0 0;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../images/inspiration-bg.avif);
+    height: 362px;
+    z-index: -1;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 825px;
+  }
+
+  &__images {
+    margin: 0 78px 0 -230px;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 60px;
+    color: $title;
+    @extend %title-font;
+    padding: 0 0 16px 0;
+    margin: 0 0 24px 0;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      background: #6d7278;
+      width: 200px;
+      height: 1px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 30px 0;
+  }
+
+  &__content {
+    max-width: 825px;
+  }
+
+  &__item {
+    color: $title;
+    @extend %title-font;
+    line-height: 23px;
+    margin: 0 0 33px 0;
+  }
+
+  &__item-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 14px 0;
+    border-bottom: 2px solid #fff;
+    border-radius: 4px;
+  }
+
+  &__line {
+    height: 2px;
+    border-radius: 4px;
+    background-color: $title;
+    margin: -2px 0 0 0;
+  }
+}

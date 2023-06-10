@@ -1,50 +1,50 @@
 .gallery {
-    padding: 80px 0 90px;
+  padding: 80px 0 90px;
 
-    &__buttons {
-        text-align   : center;
-        margin-bottom: 40px;
+  &__buttons {
+    text-align: center;
+    margin: 0 0 40px 0;
+  }
+
+  &__btn {
+    margin: 0 13px;
+    background-color: transparent;
+    border: 1px solid #454647;
+    border-radius: 20px;
+    padding: 6px 16px;
+    color: #8f8d8d;
+
+    font: {
+      size: 14px;
+      weight: 600;
     }
 
-    &__btn {
-        margin          : 0 13px;
-        background-color: transparent;
-        border          : 1px solid #454647;
-        border-radius   : 20px;
-        padding         : 6px 16px;
-        color           : #8f8d8d;
+    cursor: pointer;
+  }
 
-        font: {
-            size  : 14px;
-            weight: 600;
-        }
+  .mixitup-control-active {
+    background-color: rgba(#ffef35, 0.5);
+    color: $title;
+    border: 1px solid #ffef35;
+  }
 
-        cursor: pointer;
-    }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px 35px;
+  }
 
-    .mixitup-control-active {
-        background-color: rgba(#ffef35, 0.5);
-        color           : $title;
-        border          : 1px solid #ffef35;
-    }
+  &__item:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
 
-    &__items {
-        display              : grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows   : repeat(2, 1fr);
-        grid-gap             : 30px 35px;
-    }
-
-    &__item:first-child {
-        grid-column: span 2;
-        grid-row   : span 2;
-    }
-
-    &__item-img {
-        object-fit: cover;
-        width     : 100%;
-        max-height: 1150px;
-        height    : 100%;
-    }
+  &__item-img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 1150px;
+    height: 100%;
+  }
 
 }
