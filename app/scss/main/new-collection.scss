@@ -1,6 +1,6 @@
 .new-collection {
   text-align: center;
-  padding: 45px 0 105px;
+  padding: 45px 0 35px;
 
   &__title {
     color: $title;
@@ -34,6 +34,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 30px;
+  padding: 0 0 70px 0;
 
   &__item {
     position: relative;
@@ -72,8 +73,8 @@
     font-size: 20px;
     line-height: 25px;
     color: $title;
-    padding:0 0 19px 0;
-    margin:0 0 19px 0;
+    padding: 0 0 19px 0;
+    margin: 0 0 19px 0;
     position: relative;
 
     &::after {

@@ -48,7 +48,7 @@ function fonts() {
 }
 
 function images() {
-    return src(["app/images/src/*.*", "app/images/src/**/*.*", "!app/images/src/*.svg"])
+    return src(["app/images/src/*.*", "app/images/src/**/*.*", "!app/images/src/**/*.svg"])
         .pipe(newer("app/images"))
         .pipe(avif({quality: 50}))
 
