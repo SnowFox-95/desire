@@ -1766,3 +1766,12 @@ body {
 .partners__item {
   margin: 0 auto;
 }
+
+/* for gallery page*/
+.gallery.gallery-page .gallery__item img {
+  max-height: 1165px;
+}
+.gallery.gallery-page .gallery__item:nth-child(8) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
