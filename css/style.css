@@ -1319,8 +1319,8 @@ body {
 }
 .breadcrumps__item::after {
   content: "/";
-  margin: 0 4px 0 -4px;
-  
+  margin: 0 0 0 -4px;
+  margin: 0 4px 0 0;
 }
 .breadcrumps__item:last-child::after {
   display: none;
@@ -1382,7 +1382,7 @@ body {
 
 .new-collection {
   text-align: center;
-  padding: 45px 0 105px;
+  padding: 45px 0 35px;
 }
 .new-collection__title {
   color: #363838;
@@ -1412,6 +1412,7 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 30px;
+  padding: 0 0 70px 0;
 }
 .collection__item {
   position: relative;
@@ -1753,4 +1754,15 @@ body {
   border-radius: 4px;
   background-color: #363838;
   margin: -2px 0 0 0;
+}
+
+.partners {
+  padding: 16px 0 60px;
+}
+.partners__items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.partners__item {
+  margin: 0 auto;
 }
