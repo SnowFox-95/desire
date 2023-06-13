@@ -1,5 +1,5 @@
 /* root */
-.contact__title, .inspiration__item, .inspiration__title, .about__title, .about__prev-title, .blog-box__item-title, .blog-box__title, .works-path__item-title, .works-path__title, .decor__title, .collection__info-title, .new-collection__title, .top__slider-title, .footer__info-title, .rightside-menu__title, .menu__list-link {
+.contact-slider__title, .contact__title, .inspiration__item, .inspiration__title, .about__title, .about__prev-title, .blog-box__item-title, .blog-box__title, .works-path__item-title, .works-path__title, .decor__title, .collection__info-title, .new-collection__title, .top__slider-title, .footer__info-title, .rightside-menu__title, .menu__list-link {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -1828,7 +1828,7 @@ body {
 }
 
 .contact__form {
-  padding: 0 360px 0 660px;
+  padding: 0 360px 101px 660px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1875,4 +1875,37 @@ body {
   border-radius: 21px;
   padding: 6px 60px;
   cursor: pointer;
+}
+
+.contact-slider {
+  padding: 0 0 102px 0;
+}
+.contact-slider__link {
+  position: relative;
+  margin: 0 0 20px 0;
+}
+.contact-slider__link:hover .contact-slider__title {
+  opacity: 1;
+}
+.contact-slider__img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+}
+.contact-slider__title {
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #363838;
+  line-height: 22px;
+  padding: 0 20px;
+  text-align: center;
+  opacity: 0;
 }
