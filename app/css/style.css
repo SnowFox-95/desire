@@ -1911,3 +1911,35 @@ body {
 }
 
 /* for blog page */
+.blog__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 365px;
+  margin: 0 0 0 30px;
+}
+
+.aside__search {
+  position: relative;
+}
+.aside__search-input {
+  padding: 6px 45px 6px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(54, 56, 56, 0.7);
+  display: block;
+  width: 100%;
+}
+.aside__search-input::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  color: #a1a1a1;
+}
+.aside__search-btn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 10px;
+  right: 13px;
+  cursor: pointer;
+}

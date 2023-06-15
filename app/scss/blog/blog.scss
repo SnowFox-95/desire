@@ -1,0 +1,10 @@
+.blog {
+    padding: 60px 0 100px;
+
+    &__inner {
+        display        : flex;
+        justify-content: space-between;
+        width          : 365px;
+        margin         : 0 0 0 30px;
+    }
+}
