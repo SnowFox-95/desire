@@ -1,6 +1,10 @@
 .aside {
+    width : 365px;
+    margin: 0 0 0 30px;
+
     &__search {
         position: relative;
+        margin  : 0 0 40px 0;
     }
 
     &__search-input {
@@ -32,3 +36,8 @@
         cursor          : pointer;
     }
 }
+
+@import 'asideComponents/category';
+@import 'asideComponents/recent';
+@import 'asideComponents/tags';
+@import 'asideComponents/social';

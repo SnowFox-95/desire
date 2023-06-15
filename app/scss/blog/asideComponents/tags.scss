@@ -1,0 +1,27 @@
+.blog {
+    &__tags-title {
+        line-height: 23px;
+        margin     : 0 0 16px 0;
+        color      : $title;
+        @extend %title-font;
+    }
+
+    &__tags {
+        margin: 0 0 50px 0;
+    }
+
+    &__tags-link {
+        color: #8f8d8d;
+
+        font: {
+            weight: 600;
+            size  : 14px;
+        }
+
+        padding      : 0 16px;
+        margin       : 0 10px 10px 0;
+        display      : inline-block;
+        border       : 1px solid rgba(#454647, .5);
+        border-radius: 14px;
+    }
+}

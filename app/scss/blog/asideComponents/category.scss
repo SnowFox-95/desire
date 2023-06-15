@@ -1,0 +1,21 @@
+.blog {
+    &__category {
+        margin: 0 0 36px 0;
+    }
+
+    &__category-title {
+        line-height: 23px;
+        margin     : 0 0 16px 0;
+        color      : $title;
+        @extend %title-font;
+
+    }
+
+    &__category-item {
+        margin: 0 0 12px 0;
+    }
+
+    &__category-link {
+        color: inherit;
+    }
+}

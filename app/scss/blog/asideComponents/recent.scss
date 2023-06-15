@@ -1,0 +1,25 @@
+.recent-posts {
+    margin: 0 0 40px 0;
+
+    &__title {
+        line-height: 23px;
+        margin     : 0 0 24px 0;
+        color      : $title;
+        @extend %title-font;
+    }
+
+    &__item {
+        margin: 0 0 11px 0;
+    }
+
+    &__item-title {
+        display: block;
+        color  : inherit;
+    }
+
+    &__date,
+    &__author {
+        color    : #a1a1a1;
+        font-size: 14px;
+    }
+}
