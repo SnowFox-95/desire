@@ -1,0 +1,21 @@
+.article-slider {
+    &__arrow {
+        padding   : 0;
+        border    : none;
+        background: transparent;
+        position  : absolute;
+        top       : 50%;
+        transform : translateY(-50%);
+        z-index   : 10;
+        cursor    : pointer;
+    }
+
+    &__arrowleft {
+        left: 16px;
+    }
+
+    &__arrowright {
+        right: 16px;
+    }
+
+}

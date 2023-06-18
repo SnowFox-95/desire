@@ -1,8 +1,18 @@
 .blog {
     padding: 60px 0 100px;
+
     &__inner {
         display        : flex;
         justify-content: space-between;
-        
+    }
+
+    &__items {
+        max-width: 730px;
     }
 }
+
+@import 'blogComponents/singe__item';
+@import 'blogComponents/blockquote';
+@import 'blogComponents/popup';
+@import 'blogComponents/slider';
+@import 'blogComponents/pagination';

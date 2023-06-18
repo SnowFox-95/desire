@@ -1,15 +1,16 @@
 .rightside-menu {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  max-width: 694px;
+  position        : absolute;
+  right           : 0;
+  top             : 0;
+  bottom          : 0;
+  width           : 100%;
+  height          : 100%;
+  max-width       : 694px;
   background-color: #fff;
-  padding: 40px 0 0 0;
-  box-shadow: -2px 3px 17px 0px #000;
-  transition: all .6s;
-  z-index: 100;
+  padding         : 40px 0 0 0;
+  box-shadow      : -2px 3px 17px 0px #000;
+  transition      : all .6s;
+  z-index         : 10000;
 
   &.rightside-menu--close {
     transform: translateX(500%);
@@ -17,21 +18,22 @@
 
   &__close {
     background-color: transparent;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    margin: 0 0 60px 50px;
+    border          : none;
+    padding         : 0;
+    cursor          : pointer;
+    margin          : 0 0 60px 50px;
   }
 
   &__content {
     text-align: center;
-    max-width: 485px;
-    margin: 0 auto;
+    max-width : 485px;
+    margin    : 0 auto;
+    z-index   : 10000;
   }
 
   &__logo {
     display: inline-block;
-    margin: 0 0 40px 0;
+    margin : 0 0 40px 0;
 
     &-img {
       margin: 0 0 0 60px;
@@ -42,21 +44,21 @@
   &__title {
     color: $title;
     @extend %title-font;
-    font-size: 36px;
+    font-size  : 36px;
     line-height: 51px;
-    position: relative;
-    margin: 0 0 17px 0;
-    padding: 0 0 17px 0;
+    position   : relative;
+    margin     : 0 0 17px 0;
+    padding    : 0 0 17px 0;
 
     &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      max-width: 252px;
-      margin: 0 auto;
-      height: 1px;
+      content   : '';
+      position  : absolute;
+      bottom    : 0;
+      left      : 0;
+      right     : 0;
+      max-width : 252px;
+      margin    : 0 auto;
+      height    : 1px;
       background: #6d7278;
     }
   }

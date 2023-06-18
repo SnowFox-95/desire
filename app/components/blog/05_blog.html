@@ -1,7 +1,13 @@
 <section class="blog">
   <div class="container">
     <div class="blog__inner">
-      <div class="blog__items"></div>
+      <div class="blog__items">
+        @@include('blogComponents/single_item.html')
+        @@include('blogComponents/blockquote.html')
+        @@include('blogComponents/popup.html')
+        @@include('blogComponents/slider.html')
+        @@include('blogComponents/pagination.html')
+      </div>
       @@include('05_aside.html')
     </div>
   </div>
