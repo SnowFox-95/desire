@@ -1,0 +1,33 @@
+.decor {
+    padding: 170px 0 155px;
+    background-image: url(../images/decor-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px; /* in video min-height delete */
+
+    &__title {
+        max-width: 1250px;  /* in video min-width: 730px */
+        color: $title;
+        font-size: 60px;
+        line-height: 80px; 
+        padding-left: 620px; /* in video padding-left not defined */
+        padding-bottom: 22px;
+        margin-bottom: 22px;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 620px; /* in video left:0 */
+            width: 200px; 
+            height: 1px;
+            bottom: 0;
+            background: #6d7278;
+        }
+    }
+
+    &__text {
+        max-width: 1250px;  /* in video min-width: 540px */
+        padding-left: 620px; /* in video padding-left not defined */
+    }
+}
