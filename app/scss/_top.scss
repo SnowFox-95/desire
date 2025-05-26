@@ -28,6 +28,7 @@
     }
 
     &__slider-title {
+        @extend %title-font;
         color: $title;
         font-size: 110px;
         line-height: 135px;

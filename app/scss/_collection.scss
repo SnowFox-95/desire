@@ -9,6 +9,7 @@
         padding-bottom: 25px;
         margin-bottom: 25px;
         position: relative;
+        @extend %title-font;
 
         &::after {
             content: '';
@@ -67,6 +68,7 @@
     }
 
     &__info-title {
+        @extend %title-font;
         font-size: 20px;
         line-height: 25px;
         color: $title;

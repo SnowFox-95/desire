@@ -6,6 +6,7 @@
     min-height: 600px; /* in video min-height delete */
 
     &__title {
+        @extend %title-font;
         max-width: 1250px;  /* in video min-width: 730px */
         color: $title;
         font-size: 60px;
